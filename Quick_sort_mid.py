@@ -5,9 +5,9 @@ def Quick_sort(arr, left, right): #defining the function
     piv = arr[mid]  
     #Nesting loop
     while i<=j:    #outer loop, while loop
-        while arr[i]<piv:   #inner loop
+        while arr[i]<piv:   #inner loop 1
             i+=1      #increment
-        while arr[j]>piv:
+        while arr[j]>piv:    #inner loop 2
             j-=1      #decrement
         if i<=j:
             arr[i], arr[j] =arr[j],arr[i]
